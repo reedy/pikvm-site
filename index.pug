@@ -25,9 +25,34 @@ block body
 			table
 				tr
 					td(rowspan="2" class="text-left")
+						| We are launching a new line of our hardware on Kickstarter: PiKVM V4!
+						ul
+							li Based on the Raspberry Pi Compute Module 4 which is included!
+							li #[b 1920x1080@60Hz & 1920x1200@60Hz] resolution support for increased UEFI/BIOS compatibility.
+							li Improved #[b WiFi connectivity] with a port for an optional external antenna.
+							li OTG #[b Keyboard] & #[b mouse]; #[b Mass Storage Drive] emulation.
+							li Ability to #[b simulate "removal and insertion" for USB].
+							li Onboard #[b ATX power control].
+							li Onboard #[b fan controller].
+							li #[b A real-time clock].
+							li #[b RJ-45 and USB serial console port] (to manage PiKVM OS or to connect with the server).
+							li
+								| #[b No need for soldering or breadboarding.] It's a pre-assembled, reliable device
+								| which you can use yourself or provide to your clients.
+							li Continued use of PiKVM OS - #[b all the software is fully open].
+					td #[+img("v4.jpg", 400)]
+			br
+			a(href="https://www.kickstarter.com/projects/mdevaev/pikvm-v4" class="clickable")
+				div PiKVM V4 on Kickstarter right now!
+			hr
+
+
+			table
+				tr
+					td(rowspan="2" class="text-left")
 						| We also made our own
 						| #[b ready-made PiKVM V3 on Raspberry Pi 4].#[br]
-						| #[b #[a(target="_blank" href="https://youtu.be/dTchVKxx7Fo") Watch the video!]]#[br]
+						| #[b #[a(target="_blank" href="https://youtu.be/232opnNPGNo") Watch the video!]]#[br]
 						| This device has all the features of the DIY version, including:
 						ul
 							li
@@ -49,12 +74,20 @@ block body
 			br
 			a(href="/buy" class="clickable")
 				div Buy PiKVM V3 right now!
+
+
+
+
 			table
 				tr
 					td(colspan="4")
-						| #[b Great project review by Novaspirit Tech: #[a(target="_blank" href="https://youtu.be/plP9Y1likRg") YouTube]]#[br]
-						| Boring technical details from us: #[a(target="_blank" href="https://youtu.be/9YhPWjWv5gw") YouTube]#[br]
-						| And here some examples from us and our happy users.
+						| #[br]#[br]
+						| Great project review by #[a(target="_blank" href="https://youtu.be/232opnNPGNo") #[b Linus Tech Tips]]
+						| and #[a(target="_blank" href="https://youtu.be/plP9Y1likRg") #[b Novaspirit Tech]]
+						| #[br]#[br]
+						//|#[br]
+						//| Boring technical details from us: #[a(target="_blank" href="https://youtu.be/9YhPWjWv5gw") YouTube]#[br]
+						//| And here some examples from us and our happy users.
 				//tr
 					each index in [1, 2, 3, 4]
 						td #[+img(`diy-${index}.jpg`, 200)]
