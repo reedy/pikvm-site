@@ -1,4 +1,4 @@
-ul.navbar {
+div.navbar {
 	box-shadow: var(--shadow-small);
 	list-style-type: none;
 	margin: 0;
@@ -7,31 +7,34 @@ ul.navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 50px;
+	min-height: 80px;
 	z-index: 2147483646;
 }
 
-ul.navbar li.right {
+div.navbar a.right {
 	float: right;
 }
 
-ul.navbar li.left {
+div.navbar a.left {
 	float: left;
 }
 
-ul.navbar li a.logo {
-	line-height: 50px;
+div.navbar a.logo {
+	line-height: 80px;
 	outline: none;
 	cursor: pointer;
 	display: inline-block;
 	color: var(--cs-navbar-default-fg);
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 25px;
+	padding-right: 25px;
 	text-decoration: none;
 }
+div.navbar a.logo img {
+	height: 45px;
+}
 
-ul.navbar li a.link {
-	line-height: 50px;
+div.navbar a.link {
+	line-height: 80px;
 	outline: none;
 	cursor: pointer;
 	display: inline-block;
@@ -42,30 +45,29 @@ ul.navbar li a.link {
 	font-weight: bold;
 }
 
-ul.navbar li a.important {
+div.navbar a.important {
 	background-color: var(--cs-navbar-item-important-bg);
 	color: var(--cs-navbar-item-important-fg);
 }
 
-ul.navbar li a.logo:hover:not(.active),
-ul.navbar li a.link:hover:not(.active) {
+div.navbar a.logo:hover:not(.active),
+div.navbar a.link:hover:not(.active) {
 	background-color: var(--cs-navbar-item-hovered-bg);
 	color: var(--cs-navbar-item-hovered-fg);
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	/* iPad 8 */
-	ul.navbar li a#logo:hover:not(.active),
-	ul.navbar li a.link:hover:not(.active) {
+	div.navbar a#logo:hover:not(.active),
+	div.navbar a.link:hover:not(.active) {
 		background-color: var(--cs-navbar-default-bg) !important;
 	}
 }
 
-ul.navbar li a.logo img {
+div.navbar li a.logo img {
 	margin-top: -2px;
 	height: 24px;
 }
 
-ul.navbar li a.link img {
+div.navbar li a.link img {
 	vertical-align: middle;
 	margin-right: 10px;
 	height: 20px;

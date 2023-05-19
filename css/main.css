@@ -1,13 +1,13 @@
 body {
 	margin: 0;
-	font-family: arial, sans-serif !important;
+	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI" !important;
 	color: var(--cs-page-default-fg);
 	background-color: var(--cs-page-default-bg);
 }
 
-img.svg-gray {
-	-webkit-filter: invert(0.9);
-	filter: invert(0.9);
+img.svg-white {
+	-webkit-filter: invert(1);
+	filter: invert(1);
 	vertical-align: middle;
 }
 

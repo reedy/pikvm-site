@@ -3,17 +3,37 @@
 	--cs-page-default-fg: #333333;
 	--cs-page-block-bg: #f2f1f0;
 
+	--cs-page-block-gradient: linear-gradient(
+			240.43deg,
+			rgba(0, 0, 0, 0.2) -3.92%,
+			rgba(95, 120, 255, 0.2) -3.91%,
+			rgba(0, 0, 0, 0) 73.94%
+		),
+		linear-gradient(
+			96.89deg,
+			rgba(255, 0, 214, 0.2) -0.34%,
+			rgba(0, 0, 0, 0) 102.09%
+		),
+		#323151;
+
 	--cs-control-default-bg: #4caf50;
 	--cs-control-default-fg: #ffffff;
 	--cs-control-hovered-bg: #111315;
 	--cs-control-hovered-fg: #ffffff;
 
+	/*--cs-navbar-default-bg: #1e1f22;
+	--cs-navbar-default-fg: #ffffff;
+	--cs-navbar-item-important-bg: #6f85ff;*/
 	--cs-navbar-default-bg: #333333;
 	--cs-navbar-default-fg: #e6e6e6;
 	--cs-navbar-item-important-bg: #4caf50;
+
 	--cs-navbar-item-important-fg: #ffffff;
+	/*--cs-navbar-item-important-hovered-bg: #552968;
+	--cs-navbar-item-hovered-bg: #552968;*/
 	--cs-navbar-item-important-hovered-bg: #2f6d31;
 	--cs-navbar-item-hovered-bg: #111315;
+
 	--cs-navbar-item-hovered-fg: #ffffff;
 
 	--shadow-micro: 1px 2px 4px 0 rgba(0, 0, 0, 0.4);

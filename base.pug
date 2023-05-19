@@ -53,28 +53,18 @@ html(lang="en")
 				| main();
 
 	body
-		ul(class="navbar")
-			li(class="left")
-				a(class="logo" href="/")
-					img(class="svg-gray" src=`${img_dir}/site.svg` alt="PiKVM")
-			li(class="left")
-				a(class="link important" href="https://www.kickstarter.com/projects/mdevaev/pikvm-v4") PiKVM V4 on Kickstarter!
-			li(class="left")
-				a(class="link" href="/buy") Buy PiKVM V3
-			li(class="left")
-				a(class="link" target="_blank" href="https://docs.pikvm.org") Documentation
-			li(class="left")
-				a(class="link" href="/support") Support
-			li(class="left")
-				a(class="link" href="/download") Download
-			li(class="left")
-				a(class="link" target="_blank" href="https://github.com/pikvm") GitHub
-			li(class="left")
-				a(class="link" target="_blank" href=reddit_link) Reddit
-			li(class="left")
-				a(class="link" href="/donate") Donate
-			li(class="right")
-				a(class="link important" target="_blank" href=github_link) DIY Getting Started
+		div(class="navbar")
+			a(class="left logo" href="/")
+				img(class="svg-white" src=`${img_dir}/site.svg` alt="PiKVM")
+			a(class="left link important" href="https://www.kickstarter.com/projects/mdevaev/pikvm-v4") PiKVM V4 on Kickstarter!
+			a(class="left link" href="/buy") Buy PiKVM V3
+			a(class="left link" target="_blank" href="https://docs.pikvm.org") Documentation
+			a(class="left link" href="/support") Support
+			a(class="left link" href="/download") Download
+			//a(class="left link" target="_blank" href="https://github.com/pikvm") GitHub
+			//a(class="left link" target="_blank" href=reddit_link) Reddit
+			//a(class="left link" href="/donate") Donate
+			a(class="right link important" target="_blank" href=github_link) DIY Getting Started
 			//li(class="right")
 				a(class="link" href=email_link) Email Us
 
