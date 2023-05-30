@@ -20,6 +20,7 @@ div.content {
 div.block {
 	display: inline-block;
 	margin-bottom: 50px;
+	min-width: 70%;
 	max-width: 70%;
 	background-color: var(--cs-page-block-bg);
 	padding: 20px;
