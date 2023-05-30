@@ -5,47 +5,53 @@ append vars
 
 block body
 	div(class="content")
-		div(class="block text-left")
-			h3 Here you can download ready-made PiKVM images
-			hr
-			| Download the appropriate memory card image for the PiKVM.#[br]
-			| Select the image by the board, platform, and the video capture device you are using.#[br]
-			| Note that minimum 16 Gb memory card class 10 is strongly recommended.#[br]
-			| To flash the image #[a(target="_blank" href="https://docs.pikvm.org/flashing_os") follow the instructions].
-			hr
-			h3 PiKVM V4 Plus &amp; V4 Mini platform (#[a(href="/buy") buy the device]):
-			ul
-				li
-					| #[a(href="https://files.pikvm.org/images/v4plus-hdmi-rpi4-latest.img.xz") #[b V4 Plus]]
-					| [#[a(href="https://files.pikvm.org/images/v4plus-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
-				li
-					| #[a(href="https://files.pikvm.org/images/v4mini-hdmi-rpi4-latest.img.xz") #[b V4 Mini]]
-					| [#[a(href="https://files.pikvm.org/images/v4mini-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
-			h3 PiKVM V3 platform (#[a(href="/buy") buy the device]):
-			ul
-				li
-					| #[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-box-latest.img.xz") #[b V3 Pre-Assembled]]
-					| [#[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-box-latest.img.xz.sha1") SHA-1]]
-				li
-					| #[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz") #[b V3 HAT Kit]]
-					| [#[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
-			hr
-			h4 #[b Raspberry Pi 4], #[b V2] platform (DIY):
-			ul
-				li
-					| #[a(href="https://files.pikvm.org/images/v2-hdmi-rpi4-latest.img.xz") #[b HDMI-to-CSI bridge]]
-					| [#[a(href="https://files.pikvm.org/images/v2-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
-				li
-					| #[a(href="https://files.pikvm.org/images/v2-hdmiusb-rpi4-latest.img.xz") #[b HDMI-to-USB dongle]]
-					| [#[a(href="https://files.pikvm.org/images/v2-hdmiusb-rpi4-latest.img.xz.sha1") SHA-1]]
-			h4 #[b Raspberry Pi Zero 2 W], #[b V2] platform (DIY):
-			ul
-				li
-					| #[a(href="https://files.pikvm.org/images/v2-hdmi-zero2w-latest.img.xz") #[b HDMI-to-CSI bridge:]]
-					| [#[a(href="https://files.pikvm.org/images/v2-hdmi-zero2w-latest.img.xz.sha1") SHA-1]]
-			hr
+		div(class="block")
+			h3 Here are the ready-made OS images for the PiKVM
+
+			div(class="text-left")
+				hr
+				| Download an appropriate OS image for the PiKVM based on the device type and platform.#[br]
+				| Flash it to a microSD memory card by following #[a(target="_blank" href="https://docs.pikvm.org/flashing_os") the simple instructions].#[br]
+				| A minimum 16 Gb class 10 memory card is recommended.
+				hr
+
+				h3 PiKVM V4 Plus &amp; V4 Mini platform (#[a(href="/buy") buy the device]):
+				ul
+					li
+						| #[a(href="https://files.pikvm.org/images/v4plus-hdmi-rpi4-latest.img.xz") #[b V4 Plus]]
+						| [#[a(href="https://files.pikvm.org/images/v4plus-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
+					li
+						| #[a(href="https://files.pikvm.org/images/v4mini-hdmi-rpi4-latest.img.xz") #[b V4 Mini]]
+						| [#[a(href="https://files.pikvm.org/images/v4mini-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
+
+				h3 PiKVM V3 platform (#[a(href="/buy") buy the device]):
+				ul
+					li
+						| #[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-box-latest.img.xz") #[b V3 Pre-Assembled]]
+						| [#[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-box-latest.img.xz.sha1") SHA-1]]
+					li
+						| #[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz") #[b V3 HAT Kit]]
+						| [#[a(href="https://files.pikvm.org/images/v3-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
+
+				h4 #[b Raspberry Pi 4], #[b V2] platform (DIY):
+				ul
+					li
+						| #[a(href="https://files.pikvm.org/images/v2-hdmi-rpi4-latest.img.xz") #[b HDMI-to-CSI bridge]]
+						| [#[a(href="https://files.pikvm.org/images/v2-hdmi-rpi4-latest.img.xz.sha1") SHA-1]]
+					li
+						| #[a(href="https://files.pikvm.org/images/v2-hdmiusb-rpi4-latest.img.xz") #[b HDMI-to-USB dongle]]
+						| [#[a(href="https://files.pikvm.org/images/v2-hdmiusb-rpi4-latest.img.xz.sha1") SHA-1]]
+
+				h4 #[b Raspberry Pi Zero 2 W], #[b V2] platform (DIY):
+				ul
+					li
+						| #[a(href="https://files.pikvm.org/images/v2-hdmi-zero2w-latest.img.xz") #[b HDMI-to-CSI bridge:]]
+						| [#[a(href="https://files.pikvm.org/images/v2-hdmi-zero2w-latest.img.xz.sha1") SHA-1]]
+
+		div(class="block")
 			| Pre-compiled images are only available for the Raspberry Pi 4 and Zero 2 W.#[br]
-			| In all other cases, you will need to build the operating system yourself. Don't worry,
-			| it's #[a(target="_blank" href="https://docs.pikvm.org/building_os") very simple].
-			hr
+			| In all other cases, you will need to build the operating system yourself.#[br]
+			| Don't worry, it's #[a(target="_blank" href="https://docs.pikvm.org/building_os") very simple].
+
+		div(class="block")
 			| #[a(target="_blank" href="https://files.pikvm.org/images") Images archive]
