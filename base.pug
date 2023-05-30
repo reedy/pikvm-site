@@ -22,6 +22,9 @@ mixin img(name, width, link="")
 	a(target="_blank" href=(link ? link : `${img_dir}/${name}`))
 		img(src=`${img_dir}/${name}` width=`${width}px`)
 
+mixin youtube(id)
+	iframe(src=`https://youtube.com/embed/${id}` width=340 height=200)
+
 block vars
 
 html(lang="en")

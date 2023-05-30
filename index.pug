@@ -75,22 +75,18 @@ block body
 			a(href="/buy" class="clickable")
 				div Buy PiKVM V3 right now!
 
-
-
-
-			table
-				tr
-					td(colspan="4")
-						| #[br]#[br]
-						| Great project review by #[a(target="_blank" href="https://youtu.be/232opnNPGNo") #[b Linus Tech Tips]]
-						| and #[a(target="_blank" href="https://youtu.be/plP9Y1likRg") #[b Novaspirit Tech]]
-						| #[br]#[br]
-						//|#[br]
-						//| Boring technical details from us: #[a(target="_blank" href="https://youtu.be/9YhPWjWv5gw") YouTube]#[br]
-						//| And here some examples from us and our happy users.
-				//tr
-					each index in [1, 2, 3, 4]
-						td #[+img(`diy-${index}.jpg`, 200)]
+		div(class="block")
+			h3 Look what they say about PiKVM!
+			+youtube("232opnNPGNo")
+			+youtube("2HqbQdZUEmY")
+			+youtube("Kx5MlT2jYxU")
+			//+youtube("LwsznhIBPMc")
+			//+youtube("dTchVKxx7Fo")
+			//+youtube("plP9Y1likRg")
+			//+youtube("jmwSfUyKC1Q")
+			+youtube("aOgcqVcY4Yg")
+			+youtube("PppcpSVYh0E")
+			+youtube("fnd6wojrw3c")
 			hr
 			table
 				tr
@@ -103,14 +99,12 @@ block body
 						| that supports #[b Full HD] video, #[b Mass Storage Drive], #[b keyboard] & #[b mouse], control the #[b ATX power]
 						| and much more.
 					td
-						| There are many ways to build a PiKVM. #[b Raspberry Pi] models #[b 2, 3, 4, or ZeroW] may be used.
+						| There are many ways to build a PiKVM. #[b Raspberry Pi] models #[b 2, 3, 4, or Zero 2 W] may be used.
 						| Video capture devices can be attached using the #[b CSI-2] or #[b USB] interfaces.
 					td
 						| Access via #[b Web UI] and #[b VNC], #[b IPMI BMC/SoL] and #[b Redfish] support,
 						| #[b Wake-on-LAN] server, advanced #[b authorization] and #[b HTTPS] out of the box.
 						| This is just a short list of what PiKVM can do out of the box.
-			a(target="_blank" href=`${github_link}#diy-getting-started` class="clickable")
-				div DIY Getting Started
 
 		div(class="block")
 			h2 Fully-featured and modern IP-KVM
@@ -126,7 +120,7 @@ block body
 					+li("Keyboard & mouse")
 						| Mouse usage works directly in the browser. The keyboard emulator supports displaying the state of the keyboard LEDs.
 					+li("Mass Storage Drive")
-						| On the Raspberry Pi 4 and ZeroW, PiKVM can emulate a virtual CD-ROM or Flash Drive.
+						| On the Raspberry Pi 4 and Zero 2 W, PiKVM can emulate a virtual CD-ROM or Flash Drive.
 						| A live image can be uploaded to boot the attached server.
 					+li("ATX power management")
 						| With a very simple circuit that can be assembled on a breadboard, the power button of the attached server
@@ -188,12 +182,11 @@ block body
 						|  so that you can be sure devices you assemble will work reliably.
 
 		div(class="block")
-			div(class="text-left")
-				table
-					tr
-						td
-							a(href="/buy" class="clickable")
-								div Buy PiKVM V3 right now!
-						td
-							a(target="_blank" href=`${github_link}#diy-getting-started` class="clickable")
-								div DIY Getting Started
+			table
+				tr
+					td
+						a(href="/buy" class="clickable")
+							div Buy PiKVM V3 right now!
+					td
+						a(target="_blank" href=`${github_link}#diy-getting-started` class="clickable")
+							div DIY Getting Started
